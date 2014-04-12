@@ -1,8 +1,5 @@
-<!doctype html>
-<html>
-<head>
-</head>
-<body>
+<?php include('header.php'); ?>
   <p>Hello world!</p>
-</body>
-</html>
+
+<a href='second.php'>Link to second page</a>
+<?php include('footer.php'); ?>

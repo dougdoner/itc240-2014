@@ -1,0 +1,11 @@
+/* CSS Document */
+
+body, body * {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 100%;
+  font-family: sans-serif;
+}

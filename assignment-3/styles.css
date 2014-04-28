@@ -1,0 +1,35 @@
+/* CSS Document */
+
+body, body * {
+        margin: 0;
+        padding: 0;
+}
+      
+a img {
+  border: 0;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.user-margin {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+form span {
+  display: block;
+}
+
+form button {
+  display: block;
+}
+
+form p {
+  margin-bottom: 5px;
+}

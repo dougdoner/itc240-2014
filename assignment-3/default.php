@@ -15,7 +15,7 @@
       
 <?php
 
-if (isset($_REQUEST["gender"]) {
+if (isset($_REQUEST["gender"])) {
   if ($gender == "male") {
     $gender_choice = $results_male;
   } else if ($gender == "female") {

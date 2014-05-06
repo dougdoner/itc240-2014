@@ -15,22 +15,17 @@
       
 <?php
 if ($gender == "male") {
-  foreach ($results_male as $res) {
-    if ($request == "interests") {
-      include("interests.php");
-    } else if ($request == "age") {
-      include("age.php");
-    }
-  }
-} else {
-  foreach ($results_female as $res) {
-    if ($request == "interests") {
-      include("interests.php");
-    } else if ($request == "age") {
-      include("age.php");
-    }
-  }
+  $gender_choice = $results_male;
+} else if ($gender == "female") {
+  $gender_choice = $results_female;
 }
+  foreach ($gender_choice as $res) {
+    if ($request == "interests") {
+      include("interests.php");
+    } else if ($request == "age") {
+      include("age.php");
+    }
+  };
 ?>
     </div>
   </body>

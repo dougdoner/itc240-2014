@@ -19,7 +19,7 @@ if ($gender == "male") {
 } else if ($gender == "female") {
   $gender_choice = $results_female;
 }
-  foreach ($gender_choice as $res) {
+  foreach ($gender_choice as $gen) {
     if ($request == "interests") {
       include("interests.php");
     } else if ($request == "age") {

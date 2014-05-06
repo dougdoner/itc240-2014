@@ -19,6 +19,11 @@ if (isset($_REQUEST["gender"])) {
   $gender = $_REQUEST["gender"];
 }
 
+$gender_choice = "none";
+if (isset($_REQUEST["gender_choice"])) {
+ $gender_choice = $_REQUEST["gender"];
+}
+
 $request = "front";
 if (isset($_REQUEST["view"])) {
   $request = $_REQUEST["view"];

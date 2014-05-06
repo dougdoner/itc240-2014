@@ -21,7 +21,7 @@ if (isset($_REQUEST["gender"])) {
 
 $gender_choice = "none";
 if (isset($_REQUEST["gender_choice"])) {
- $gender_choice = $_REQUEST["gender"];
+ $gender_choice = $_REQUEST["gender_choice"];
 }
 
 $request = "front";

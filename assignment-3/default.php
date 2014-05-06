@@ -14,18 +14,21 @@
       <?php include('front.php'); ?>
       
 <?php
-if ($gender == "male") {
-  $gender_choice = $results_male;
-} else if ($gender == "female") {
-  $gender_choice = $results_female;
-}
-  foreach ($gender_choice as $gen) {
-    if ($request == "interests") {
-      include("interests.php");
-    } else if ($request == "age") {
-      include("age.php");
+
+if (isset($_REQUEST["gender"]) {
+  if ($gender == "male") {
+    $gender_choice = $results_male;
+  } else if ($gender == "female") {
+    $gender_choice = $results_female;
+  }
+    foreach ($gender_choice as $res) {
+      if ($request == "interests") {
+        include("interests.php");
+      } else if ($request == "age") {
+        include("age.php");
+      }
     }
-  };
+};
 ?>
     </div>
   </body>

@@ -1,3 +1,5 @@
-<h2>Subject: <?php printf ("%s", $subject); ?></h2>
-<p>Front of Card: <?php printf ("%s", $front_info); ?></p>
-<p>Back of Card: <?php printf ("%s", $back_info); ?></p>
+<tr>
+<td><?php printf ("%s", $subject); ?></td>
+<td><?php printf ("%s", $front_info); ?></td>
+<td><?php printf ("%s", $back_info); ?></td>
+</tr>

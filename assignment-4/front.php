@@ -32,7 +32,6 @@
     $query->execute();
     //binds the results to three variables, as there are expected to be three results
     $query->bind_result($subject, $front_info, $back_info);
-    //couldn't use fetchAll(), so had to use fetch() instead
   ?>
     <table>
       <tr>
@@ -41,6 +40,7 @@
         <th>Back Info</th>
       </tr>
   <?php
+    //couldn't use fetchAll(), so had to use fetch() instead
     while ($query->fetch()) {
       //Replaces the underscore with a space, I want to learn a cleaner way of displaying subject without doing an if statement, possibly putting an extra column in the table that I can use for queries only. e.g. "BioVocab"
       if ($subject == "Bioscientific_vocabulary") {

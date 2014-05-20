@@ -1,0 +1,82 @@
+/* CSS Document */
+
+body, body * {
+  margin: 0;
+  padding: 0;
+}
+
+a img {
+  border: 0;
+}
+
+body {
+  font-size: 1em;
+  font-family: Calibri, sans-serif;
+  line-height: 1.5em;
+  background: #ecf0f1;
+}
+
+input[type="text"] {
+  display: block;
+  margin-bottom: .75em;
+  width: 28em;
+}
+
+h1, h2 {
+  margin-bottom: .66em;
+}
+
+h1 {
+  padding-top: .66em;
+  line-height: 1em;
+}
+
+header, .main {
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  background: #27ae60;
+  padding-bottom: .25em;
+}
+
+.main-wrapper {
+  padding-top: .4em;
+}
+
+textarea {
+  resize: none;
+  display: block;
+  margin-bottom: .66em;
+  width: 24em;
+  height: 4em;
+  font-family: Calibri, sans-serif;
+  font-size: .81em;
+}
+
+form {
+  margin-bottom: 1em;
+}
+
+select {
+  display: block;
+  margin-bottom: .5em;
+}
+
+hr {
+  margin-bottom: .5em;
+}
+
+table, th, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+}
+
+th {
+  background: #27ae60;
+}

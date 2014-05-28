@@ -1,0 +1,21 @@
+/* css document */
+
+
+
+table, th, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+}
+
+th {
+  background: #27ae60;
+}
+
+input[type="text"] {
+  display: block;
+  margin-bottom: .66em;
+}

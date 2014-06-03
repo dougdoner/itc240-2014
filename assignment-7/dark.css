@@ -1,0 +1,105 @@
+/* CSS Document */
+
+
+/************* Resets *************/
+body, body * {
+  padding: 0;
+  margin: 0;
+}
+
+a img {
+  border: 0;
+}
+
+/*********** global styles ***********/
+
+body {
+  font-size: 1em;
+  font-family: sans-serif;
+  line-height: 1.5em;
+  background: #34495E;
+  color: white;
+}
+
+/******* layout styles **********/
+
+header {
+  text-align: center;
+  padding: 10px 0;
+  background: #22313F;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.main {
+  max-width: 60em;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.main img {
+  max-width: 200px;
+  max-height: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.filter {
+  width: 248px;
+  float: left;
+  overflow: hidden;
+  background: #67809F;
+  margin-right: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.content-right {
+  max-width: 680px;
+  float: right;
+}
+
+.cover-container {
+  float: left;
+  border: 1px solid white;
+  width: 200px;
+  height: 400px;
+  margin: 0 20px 10px 0;
+  border-radius: 5px;
+  background: #67809F;
+}
+
+.cover-container h3, .cover-container p, .cover-container {
+  padding-left: .25em;
+}
+
+.listing-container {
+  width: 678px;
+  border: 1px solid white;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background: #67809F;
+}
+
+.listing-container h3 {
+  padding-left: 5px;
+}
+
+.listing-container img {
+  padding: 10px;
+  float: left;
+}
+
+/******* typography styles ******/
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #E4E4E4;
+  text-decoration: underline;
+}

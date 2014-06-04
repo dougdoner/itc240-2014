@@ -25,6 +25,37 @@ if (isset($_REQUEST["sort"])) {
   $library_user["sort"] = $mysql->real_escape_string($_REQUEST["sort"]);
 };
 
+$sort = $library_user["sort"];
+$view = $library_user["view"];
+$styles = $library_user["styles"];
+
+$sort_whitelist = [
+  "BookTitle" => true,
+  "BookAuthor" => true
+];
+
+$view_whitelist = [
+  "cover" => true,
+  "listing" => true
+];
+
+$styles_whitelist = [
+  "dark" => true,
+  "light" => true
+];
+
+if (!isset($styles_whitelist[$styles])) {
+  $library_user["styles"] = "light";
+}
+
+if (!isset($sort_whitelist[$sort])) {
+  $library_user["sort"] = "BookTitle";
+}
+
+if (!isset($view_whitelist[$view])) {
+  $library_user["view"] = "cover";
+}
+
 function cookie_maker($name, $value) {
   setcookie($name, $value, time() + 60 * 60 * 24 * 30, "/");
 };

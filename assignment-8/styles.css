@@ -1,0 +1,100 @@
+/*** CSS DOCUMENT ***/
+
+/*** RESETS ***/
+body, body * {
+  padding: 0;
+  margin: 0;
+}
+
+a img {
+  border: 0;
+}
+
+/*** LAYOUT STYLES ***/
+
+body {
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+input, textarea {
+  display: block;
+  margin-bottom: .625em;
+}
+
+header {
+  text-align: center;
+  background: green;
+  overflow: hidden;
+  margin-bottom: .625em;
+}
+
+header h1 {
+  line-height: 40px;
+  color: white;
+}
+
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.task-form {
+  padding: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.task-form h2 {
+  margin-bottom: .3725em;
+}
+
+.task-form input, .task-form textarea {
+  width: 400px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  resize: none;
+  font-family: sans-serif;
+  font-size: .8em;
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.task-table {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+table {
+  *border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th:first-child {
+  border-radius: .3725em 0 0 0;
+  -webkit-border-radius: .3725em 0 0 0;
+  -moz-border-radius: .3725em 0 0 0;
+}
+
+th:last-child {
+  border-radius: 0 .3725em 0 0;
+  -webkit-border-radius: 0 .3725em 0 0;
+  -moz-border-radius: 0 .3725em 0 0;
+}
+
+th, td {
+  padding: 5px;
+  border: .5px solid black;
+}
+
+input[type=checkbox] {
+  display: inline-block;
+}
+
+th {
+  background: #95a5a6;
+  text-align: left;
+}

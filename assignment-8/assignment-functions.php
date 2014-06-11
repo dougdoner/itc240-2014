@@ -11,6 +11,7 @@ function create_task($taskTitle, $taskNotes) {
 
 function complete_task($task) {
   global $mysql;
+  $task = $mysql->real_escape_string($task);
   $prepared = $mysql->prepare("DELETE FROM tblTasks WHERE taskID = $task");
   $prepared->execute();
 };

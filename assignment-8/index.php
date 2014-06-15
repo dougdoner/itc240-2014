@@ -65,5 +65,16 @@ if (isset($taskTitle) && isset($taskNotes)) {
         </table>
       </div><!-- end .task-table div -->
     </div>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".task-update").on("change", function() {
+        if ($(this).is(":checked")) {
+          var taskValue = $(this).attr("id");
+          this.form.submit(taskValue);
+        }
+      });
+    });
+  </script>
   </body>
 </html>
